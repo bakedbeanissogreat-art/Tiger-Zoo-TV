@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <meta name="theme-color" content="#11100e">
+    <title>Home | Tiger Zoo TV</title>
+</head>
+<body>
+    <main class="login-page" id="login-page" hidden>
+        <section class="brand-panel" aria-label="Tiger Zoo TV">
+            <a class="brand" href="index.html" aria-label="Tiger Zoo TV home">
+                <img src="../image/logo.png" alt="">
+                <span>TIGER ZOO <b>TV</b></span>
+            </a>
+            <div class="brand-copy">
+                <p class="eyebrow">YOUR WILDEST WATCHLIST</p>
+                <h1>Stay close to<br><em>the wild.</em></h1>
+                <p>Original stories, untamed adventures, and the world’s most curious creatures, all in one place.</p>
+            </div>
+            <span class="edition">EST. 2024 <i></i> TIGER ZOO TV</span>
+        </section>
+
+        <section class="form-panel" aria-labelledby="login-title">
+            <div class="form-wrap">
+                <div class="mobile-brand" aria-hidden="true"><img src="../image/logo.png" alt=""> <span>TIGER ZOO <b>TV</b></span></div>
+                <p class="eyebrow">MEMBER ACCESS</p>
+                <h2 id="login-title">Welcome back.</h2>
+                <p class="intro">Sign in to continue your adventure.</p>
+
+                <form id="login-form">
+                    <label for="email">Email address</label>
+                    <div class="input-wrap">
+                        <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+                    </div>
+
+                    <div class="label-row">
+                        <label for="password">Password</label>
+                        <button class="text-button" id="forgot-password" type="button">Forgot password?</button>
+                    </div>
+                    <div class="input-wrap password-wrap">
+                        <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" minlength="6" required>
+                        <button class="toggle-password" id="toggle-password" type="button" aria-label="Show password">Show</button>
+                    </div>
+
+                    <label class="remember"><input type="checkbox" name="remember"> <span>Keep me signed in</span></label>
+                    <button class="submit-button" type="submit">Sign in <span aria-hidden="true">&#8594;</span></button>
+                    <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+                </form>
+
+                <p class="signup">New to the pride? <button class="text-button" id="signup-button" type="button">Create an account</button></p>
+                <p class="legal">By continuing, you agree to our <a href="#terms">Terms of Use</a> and <a href="#privacy">Privacy Policy</a>.</p>
+            </div>
+        </section>
+    </main>
+
+    <main class="home-page" id="home-page">
+        <header class="home-header">
+            <a class="brand" href="#home" aria-label="Tiger Zoo TV home">
+                <img src="../image/logo.png" alt="">
+                <span>TIGER ZOO <b>TV</b></span>
+            </a>
+            <nav aria-label="Main navigation">
+                <a class="active" href="#home">Home</a>
+                <a href="../series/series.html">Series</a>
+                <a href="../nature/nature.html">Nature</a>
+            </nav>
+            <button class="avatar" id="sign-in" type="button" aria-label="Sign in">TZ</button>
+        </header>
+
+        <section class="home-hero" aria-labelledby="home-title">
+            <div class="hero-copy">
+                <p class="eyebrow">FEATURED TONIGHT</p>
+                <h1 id="home-title">Into the<br><em>untamed.</em></h1>
+                <p>Follow the quiet power of the world’s most elusive cats, from first light to the edge of night.</p>
+                <div class="hero-actions">
+                    <button class="watch-button" id="hero-watch" type="button">Watch now <span aria-hidden="true">&#9654;</span></button>
+                    <button class="info-button" type="button">More details</button>
+                </div>
+            </div>
+            <div class="hero-tiger" aria-hidden="true"></div>
+        </section>
+
+        <section class="content-row" aria-labelledby="continue-title">
+            <div class="section-heading">
+                <div><p class="eyebrow">PICK UP WHERE YOU LEFT OFF</p><h2 id="continue-title">Continue watching</h2></div>
+                <button class="browse-button" type="button">View all <span aria-hidden="true">&#8594;</span></button>
+            </div>
+            <div class="show-grid">
+                <article class="show-card show-card-two"><div class="show-art"><span>AFTER<br>DARK</span><button class="card-play" data-episode="Episode 01" type="button" aria-label="Play After Dark episode 1">&#9654;</button></div><div class="show-meta"><strong>After Dark</strong><span>Episode 01 <i></i> 38 min</span></div></article>
+            </div>
+        </section>
+
+        <dialog class="video-dialog" id="episode-dialog" aria-labelledby="episode-title">
+            <div class="dialog-head"><div><p class="eyebrow">NOW PLAYING</p><h2 id="episode-title">After Dark <span>/ Episode 01</span></h2></div><button class="dialog-close" id="close-episode" type="button" aria-label="Close video">&times;</button></div>
+            <video id="episode-video" controls preload="metadata" poster="../image/logo.png">
+                <source src="https://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
+                Your browser does not support video playback.
+            </video>
+        </dialog>
+    </main>
+</body>
+</html>

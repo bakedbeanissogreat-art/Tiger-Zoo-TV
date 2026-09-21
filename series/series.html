@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="series.css">
+    <script src="series.js" defer></script>
+    <meta name="theme-color" content="#0e110e">
+    <title>Series | Tiger Zoo TV</title>
+</head>
+<body class="series-body">
+    <main class="series-page">
+        <header class="series-header">
+            <a class="brand" href="../home/index.html" aria-label="Tiger Zoo TV home">
+                <img src="../image/logo.png" alt="">
+                <span>TIGER ZOO <b>TV</b></span>
+            </a>
+            <nav aria-label="Main navigation">
+                <a href="../home/index.html">Home</a>
+                <a class="active" href="series.html">Series</a>
+                <a href="../nature/nature.html">Nature</a>
+            </nav>
+            <button class="avatar" id="sign-in" type="button" aria-label="Sign in">TZ</button>
+        </header>
+
+        <section class="series-hero" aria-labelledby="series-title">
+            <div class="hero-copy">
+                <p class="eyebrow">THE TIGER ZOO ORIGINALS</p>
+                <h1 id="series-title">Stories<br><em>with teeth.</em></h1>
+                <p>Long-form journeys into the lives, landscapes, and instincts that make the wild impossible to look away from.</p>
+                <a class="hero-link" href="#catalog">Browse the collection <span aria-hidden="true">&#8594;</span></a>
+            </div>
+            <div class="hero-art" aria-hidden="true"><img src="../image/logo.png" alt=""></div>
+            <div class="hero-index" aria-hidden="true"><span>01</span><i></i><span>06</span></div>
+        </section>
+
+        <section class="catalog" id="catalog" aria-labelledby="catalog-title">
+            <div class="catalog-heading">
+                <div><p class="eyebrow">WATCH YOUR WAY</p><h2 id="catalog-title">All series</h2></div>
+                <span class="catalog-count" id="catalog-count">06 SERIES</span>
+            </div>
+            <div class="filter-bar" role="group" aria-label="Filter series by category">
+                <button class="filter active" data-filter="all" type="button">All</button>
+                <button class="filter" data-filter="predators" type="button">Predators</button>
+                <button class="filter" data-filter="habitats" type="button">Habitats</button>
+                <button class="filter" data-filter="night" type="button">After dark</button>
+            </div>
+            <div class="series-grid">
+                <article class="series-card featured-card" data-category="predators">
+                    <div class="series-art art-ember"><span class="art-number">01</span><span class="art-title">EMBER<br>LINE</span><span class="art-label">ORIGINAL SERIES</span></div>
+                    <div class="series-info"><div><p class="card-kicker">PREDATORS</p><h3>Ember Line</h3><p>On the trail of the last great cats.</p></div><button class="save-button" type="button" aria-label="Add Ember Line to watchlist" aria-pressed="false">+</button></div>
+                </article>
+                <article class="series-card" data-category="night">
+                    <div class="series-art art-dark"><span class="art-number">02</span><span class="art-title">AFTER<br>DARK</span><span class="art-label">6 EPISODES</span></div>
+                    <div class="series-info"><div><p class="card-kicker">NIGHT</p><h3>After Dark</h3><p>When the forest wakes.</p></div><button class="save-button" type="button" aria-label="Add After Dark to watchlist" aria-pressed="false">+</button></div>
+                </article>
+                <article class="series-card" data-category="habitats">
+                    <div class="series-art art-tide"><span class="art-number">03</span><span class="art-title">TIDE<br>COUNTRY</span><span class="art-label">4 EPISODES</span></div>
+                    <div class="series-info"><div><p class="card-kicker">HABITATS</p><h3>Tide Country</h3><p>Life at the water's edge.</p></div><button class="save-button" type="button" aria-label="Add Tide Country to watchlist" aria-pressed="false">+</button></div>
+                </article>
+                <article class="series-card" data-category="predators">
+                    <div class="series-art art-hunt"><span class="art-number">04</span><span class="art-title">THE<br>HUNT</span><span class="art-label">8 EPISODES</span></div>
+                    <div class="series-info"><div><p class="card-kicker">PREDATORS</p><h3>The Hunt</h3><p>Instinct, strategy, survival.</p></div><button class="save-button" type="button" aria-label="Add The Hunt to watchlist" aria-pressed="false">+</button></div>
+                </article>
+                <article class="series-card" data-category="habitats">
+                    <div class="series-art art-canopy"><span class="art-number">05</span><span class="art-title">HIGH<br>CANOPY</span><span class="art-label">5 EPISODES</span></div>
+                    <div class="series-info"><div><p class="card-kicker">HABITATS</p><h3>High Canopy</h3><p>A world above the ground.</p></div><button class="save-button" type="button" aria-label="Add High Canopy to watchlist" aria-pressed="false">+</button></div>
+                </article>
+                <article class="series-card" data-category="night">
+                    <div class="series-art art-signal"><span class="art-number">06</span><span class="art-title">WILD<br>SIGNAL</span><span class="art-label">3 EPISODES</span></div>
+                    <div class="series-info"><div><p class="card-kicker">NIGHT</p><h3>Wild Signal</h3><p>Listening for the living world.</p></div><button class="save-button" type="button" aria-label="Add Wild Signal to watchlist" aria-pressed="false">+</button></div>
+                </article>
+            </div>
+            <p class="empty-state" id="empty-state" hidden>No series in this collection yet.</p>
+        </section>
+    </main>
+</body>
+</html>
